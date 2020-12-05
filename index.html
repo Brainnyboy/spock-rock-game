@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Spock Rock Game Project</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Fontawesome ICON-->
+    <link href="assets/css/all.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css">-->
+    <!-- Style.css CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="game-container">
+    <!-- Header -->
+    <div class="header">
+        <h1>Rock Paper Scissors Lizard Spock</h1>
+    </div>
+    <!-- Player Container -->
+    <div class="player-container" id="player">
+        <h2>You - <span id="playerScore"></span><span class="choice" id="playerChoice"></span></h2>
+        <div class="icon-container">
+            <i class="far fa-hand-rock" title="Rock" id="playerRock" onclick="select('rock')"></i>
+            <i class="far fa-hand-paper" title="Paper" id="playerPaper" onclick="select('paper')"></i>
+            <i class="far fa-hand-scissors" title="Scissors" id="playerScissors" onclick="select('scissors')"></i>
+            <i class="far fa-hand-lizard" title="Lizard" id="playerLizard" onclick="select('lizard')"></i>
+            <i class="far fa-hand-spock" title="Spock" id="playerSpock" onclick="select('spock')"></i>
+        </div>
+    </div>
+    <!-- Computer Container -->
+    <div class="player-container" id="computer">
+        <h2>Computer - <span id="computerScore"></span><span class="choice" id="computerChoice"></span></h2>
+        <div class="icon-container">
+            <i class="far fa-hand-rock" title="Rock" id="computerRock"></i>
+            <i class="far fa-hand-paper" title="Paper" id="computerPaper"></i>
+            <i class="far fa-hand-scissors" title="Scissors" id="computerScissors"></i>
+            <i class="far fa-hand-lizard" title="Lizard" id="computerLizard"></i>
+            <i class="far fa-hand-spock" title="Spock" id="computerSpock"></i>
+        </div>
+    </div>
+    <!-- Reset Icon -->
+    <i class="fas fa-sync-alt reset-icon" title="Reset" onclick="resetAll()"></i>
+    <!--  Results Text -->
+    <div class="result-container">
+        <h3 class="result-text" id="resultText"></h3>
+    </div>
+</div>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="module" src="js/script.js"></script>
+</body>
+</html>
